@@ -5,7 +5,7 @@ class StationList {
 }
 
 // 연결 리스트를 다루는 클래스 정의
-public class LinkedList {
+public class LinkedList<I extends Number> {
     // 연결 리스트의 실체가 되는 배열(요소 수는 최대 10으로 한다)
     public static StationList[] list = new StationList[10];
 
