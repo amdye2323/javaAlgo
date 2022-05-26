@@ -1,4 +1,4 @@
-package infrearn;
+package infrearn.string;
 
 public class subject02 {
     public String soution(String str){

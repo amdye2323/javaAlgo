@@ -1,6 +1,4 @@
-package infrearn;
-
-import java.util.ArrayList;
+package infrearn.string;
 
 public class subject05 {
     public String solution(String str){

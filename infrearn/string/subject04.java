@@ -1,4 +1,4 @@
-package infrearn;
+package infrearn.string;
 
 import java.util.ArrayList;
 

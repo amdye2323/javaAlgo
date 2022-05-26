@@ -1,6 +1,4 @@
-package infrearn;
-
-import java.util.Scanner;
+package infrearn.string;
 
 public class subject01 {
     public static void main(String[] args) {
