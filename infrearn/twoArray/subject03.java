@@ -1,29 +1,22 @@
 package infrearn.twoArray;
 
+import java.util.ArrayList;
+
 public class subject03 {
-    public int solution(int n , int m,int[] arr){
-        int maxValue = Integer.MIN_VALUE;
 
-        for (int i=0;i<n-m+1;i++){
-            int compareValue = 0;
-            for(int j=i;j<i+3;j++){
-                compareValue += arr[j];
-            }
-            if(maxValue<compareValue){
-                maxValue = compareValue;
-            }
-        }
-
-        return maxValue;
-    }
-
-    public int solution1(int n , int m,int[] arr){
+    public int solution(int n , int m, int[] arr){
         int answer = 0;
-
         int maxValue = 0;
 
-        for(int i = 0;i<m;i++){
+        for(int i =0;i<m;i++){
             maxValue += arr[i];
+        }
+
+        answer = maxValue;
+
+        for(int i =0, j = m;j<n;i++,j++){
+            maxValue = maxValue - arr[i] + arr[j];
+            answer = Math.max(answer,maxValue);
         }
 
         return answer;
