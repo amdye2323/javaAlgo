@@ -16,10 +16,6 @@ public class subject06 {
         for(int lt = 0;lt<len;lt++){
             int lossCount = 2;
             while (rt<len){
-                if(){
-                    answer = Math.max(answer,rt-lt+2);
-                    break;
-                }
                 rt++;
             }
         }
